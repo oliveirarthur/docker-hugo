@@ -4,3 +4,5 @@ RUN apk update && apk add \
     hugo
 
 WORKDIR /app
+
+ENTRYPOINT [ "hugo" ]

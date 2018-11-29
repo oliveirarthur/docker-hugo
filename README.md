@@ -6,10 +6,10 @@ This is a docker version of [Hugo], based on Alpine Linux.
 
 - Pull this image from docker repos
 > docker pull oliveirarthur/hugo
-- Run this image and mount any directory you want to use on hugo to the `/app` folder
-> docker run -v $(pwd):/app oliveirarthur/hugo hugo
+- Run this image as a local executable and mount any directory you want to use on hugo to the `/app` folder
+> docker run -v $(pwd):/app oliveirarthur/hugo
 - And you can even run a shell inside a container
-> docker run -v $(pwd):/app -it oliveirarthur/hugo sh
+> docker run -v $(pwd):/app -it --entrypoint sh oliveirarthur/hugo
 
 ## Building from scratch
 
